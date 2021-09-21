@@ -1,0 +1,20 @@
+menu "Example Configuration"
+
+config WIFI_SSID
+    string "WiFi SSID"
+    default "LEDE"
+    help
+        SSID (network name) for the example to connect to.
+config WIFI_PASSWORD
+    string "WiFi Password"
+    default "mypassword"
+    help
+        WiFi password (WPA or WPA2) for the example to use.
+        Can be left blank if the network has no security set.
+
+config CONFIG_FIRMWARE_UPGRADE_URL
+    string "CONFIG OTA FIRMWARE UPGRADE"
+    default "http://192.168.2.238:9000/simple.bin"
+    help
+        CONFIG OTA FIRMWARE UPGRADE
+endmenu
